@@ -10,14 +10,14 @@
 
 int main(void)
 {
-	char c = 'a';
+	int i = 97;
 
-	while (c <= 'z')
+	while (i <= 122)
 	{
-		if (c != 'q' && c != 'e')
+		if (i != 101 && i != 113)
 		{
-			putchar(c);
-			c++;
+			putchar(i);
+			i++;
 		}
 	}
 	putchar('\n');
