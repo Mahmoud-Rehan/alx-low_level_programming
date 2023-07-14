@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Print alphabets accept for 'q' and 'e'.
+ * main - Print alphabets accept for q and e.
  *
  * Return: Always 0 (Success)
  */
