@@ -12,7 +12,7 @@ int main(void)
 
 	while (n < 16)
 	{
-		printf("%x", n / 16);
+		printf("%x", n);
 		n++;
 	}
 
