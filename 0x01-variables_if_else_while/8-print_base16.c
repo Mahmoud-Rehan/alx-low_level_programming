@@ -13,7 +13,9 @@ int main(void)
 	while (n < 16)
 	{
 		printf("%x", n / 16);
+		n++;
 	}
+
 	putchar('\n');
 	return (0);
 }
