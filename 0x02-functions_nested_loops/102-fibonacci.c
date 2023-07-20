@@ -13,12 +13,12 @@ int main(void)
 	m = 1;
 	printf("%d, %d, ", n, m);
 
-	for (i = 0; i < 50, i++)
+	for (i = 0; i < 50; i++)
 	{
 		r = n + m;
 		printf("%d, ", r);
 		n = m;
-		m = r
+		m = r;
 	}
 	return (0);
 }
