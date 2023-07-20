@@ -18,7 +18,7 @@ int main(void)
 		r = m + n;
 		if (r % 2 == 0)
 		{
-			sum +=r;
+			sum = sum + r;
 		}
 		n = m;
 		m = r;
