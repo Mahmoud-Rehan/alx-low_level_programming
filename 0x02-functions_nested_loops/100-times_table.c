@@ -38,11 +38,8 @@ void print_times_table(int n)
 				}
 				else if (j * i >= 100)
 				{
-					if (j != 0)
-					{
-						_putchar(',');
-						_putchar(' ');
-					}
+					_putchar(',');
+					_putchar(' ');
 					_putchar(((j * i) / 100) + '0');
 					_putchar((((j * i) / 10) % 10) + '0');
 					_putchar(((j * i) % 10) + '0');
