@@ -1,28 +1,24 @@
 #include <stdio.h>
 
-int fibonacci(int n);
+/**
+ * main - Print the first 50 fibonacci numbers.
+ * Return: 0 Always.
+ */
 
 int main(void)
 {
-	int n = 0;
-	int sum = fibonacci(n);
+	int i, n, m, r;
 	
-	printf("%d, ", sum);
+	n = 0;
+	m = 1;
+	printf("%d, %d, ", n, m);
+
+	for (i = 0; i < 50, i++)
+	{
+		r = n + m;
+		printf("%d, ", r);
+		n = m;
+		m = r
+	}
 	return (0);
-}
-
-int fibonacci(int n)
-{
-	int i = 0;
-
-	if (i <= 50)
-	{
-		n = n + fibonacci(n);
-		i++;
-	}
-	else
-	{
-		return (n);
-	}
-	return (n);
 }
