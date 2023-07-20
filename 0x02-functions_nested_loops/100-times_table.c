@@ -27,12 +27,9 @@ void print_times_table(int n)
 				}
 				else if (j * i < 100 && j * i >= 10)
 				{
-					if (j != 0)
-					{
-						_putchar(',');
-						_putchar(' ');
-						_putchar(' ');
-					}
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
 					_putchar(((j * i) / 10) + '0');
 					_putchar(((j * i) % 10) + '0');
 				}
