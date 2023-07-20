@@ -24,4 +24,5 @@ int fibonacci(int n)
 	{
 		return (n);
 	}
+	return (n);
 }
