@@ -12,6 +12,7 @@ int main(void)
 	
 	n = 0;
 	m = 1;
+	r = 0;
 	for (i = 0; i < 98; i++)
 	{
 		r = n + m;
@@ -23,6 +24,6 @@ int main(void)
 			printf(", ");
 		}
 	}
-	printf("\n");
+	putchar('\n';
 	return (0);
 }
