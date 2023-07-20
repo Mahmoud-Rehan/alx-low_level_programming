@@ -8,7 +8,7 @@
 int main(void)
 {
 	long i, n, m, r;
-	
+
 	n = 1;
 	m = 2;
 	printf("%ld, %ld, ", n, m);
