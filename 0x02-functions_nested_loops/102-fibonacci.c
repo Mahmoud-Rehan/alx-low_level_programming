@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+int fibonacci(int n);
+
 int main(void)
 {
 	int n = 0;
@@ -8,7 +10,7 @@ int main(void)
 	printf("%d, ", sum);
 }
 
-void fibonacci(int n)
+int fibonacci(int n)
 {
 	int i = 0;
 
