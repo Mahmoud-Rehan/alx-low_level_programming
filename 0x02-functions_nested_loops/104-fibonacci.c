@@ -10,15 +10,14 @@ int main(void)
 	unsigned long n, m, r;
 	int i;
 	
-	n = 1;
-	m = 2;
-	printf("%lu, %lu, ", n, m);
-	for (i = 2; i < 98; i++)
+	n = 0;
+	m = 1;
+	for (i = 0; i < 98; i++)
 	{
 		r = n + m;
-		printf("%lu", r);
 		n = m;
 		m = r;
+		printf("%lu", r);
 		if (i < 97)
 		{
 			printf(", ");
