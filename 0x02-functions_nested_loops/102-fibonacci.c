@@ -17,7 +17,7 @@ int main(void)
 	{
 		r = n + m;
 		printf("%ld", r);
-		if (i != 50)
+		if (i != 49)
 		{
 			printf(", ");
 		}
