@@ -2,14 +2,14 @@
 
 /**
  * main - prints the first 98 Fibonacci numbers.
- * return: 0 Always
+ * Return: 0 Always
  */
 
 int main(void)
 {
-	unsigned long n, m, r;
+	unsigned long int, m, r;
 	int i;
-	
+
 	n = 0;
 	m = 1;
 	r = 0;
