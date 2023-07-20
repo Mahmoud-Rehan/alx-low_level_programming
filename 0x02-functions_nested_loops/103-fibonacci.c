@@ -11,7 +11,7 @@ int main(void)
 
 	m = 1;
 	r = n = sum = 0;
-	while (r < 4000000)
+	while (sum < 4000000)
 	{
 		r = m + n;
 		if (r % 2 == 0)
