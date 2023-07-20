@@ -24,5 +24,6 @@ int main(void)
 		n = m;
 		m = r;
 	}
+	putchar('\n');
 	return (0);
 }
