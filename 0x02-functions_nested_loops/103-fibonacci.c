@@ -9,15 +9,19 @@ int main(void)
 {
 	long n, m, r, sum;
 
+	n = 0;
 	m = 1;
-	r = n = sum = 0;
+	r = 0;
+	sum = 0;
 	while (sum < 4000000)
 	{
 		r = m + n;
 		if (r % 2 == 0)
 		{
-			sum = sum + r;
+			sum +=r;
 		}
+		n = m;
+		m = r;
 	}
 	printf("%ld\n", sum);
 	return (0);
