@@ -13,7 +13,7 @@ int main(void)
 	n = 1;
 	m = 2;
 	printf("%lu, %lu, ", n, m);
-	while (i = 2; i < 98; i++)
+	for (i = 2; i < 98; i++)
 	{
 		r = n + m;
 		printf("%lu", r);
