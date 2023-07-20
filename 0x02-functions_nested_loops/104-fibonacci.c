@@ -17,6 +17,8 @@ int main(void)
 	{
 		r = n + m;
 		printf("%lu", r);
+		n = m;
+		m = r;
 		if (i < 98)
 		{
 			printf(", ");
