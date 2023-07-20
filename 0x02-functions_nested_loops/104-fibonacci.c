@@ -19,7 +19,7 @@ int main(void)
 		printf("%lu", r);
 		n = m;
 		m = r;
-		if (i < 98)
+		if (i < 97)
 		{
 			printf(", ");
 		}
