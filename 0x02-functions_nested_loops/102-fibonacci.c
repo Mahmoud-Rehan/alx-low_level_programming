@@ -8,6 +8,7 @@ int main(void)
 	int sum = fibonacci(n);
 	
 	printf("%d, ", sum);
+	return (0);
 }
 
 int fibonacci(int n)
