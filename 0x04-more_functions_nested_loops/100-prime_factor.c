@@ -11,7 +11,7 @@ int main(void)
 
 	for (i = 3; i < 782849; i = i + 2)
 	{
-		while ((n % 10 == 0) && (n != 1))
+		while ((n % i == 0) && (n != 1))
 		{
 			n = n / 2;
 		}
