@@ -7,25 +7,15 @@
 
 int main(void)
 {
-	unsigned long int n = 612852475143;
-	long int m = 2, factor;
+	unsigned long int i,n = 612852475143;
 
-	while (n != 0)
+	for (i = 3; i < 782849; i = i + 2)
 	{
-		if (n % div != 0)
+		while ((n % 10 == 0) && (n != 1))
 		{
-			div = div + 1;
-		}
-		else
-		{
-			factor = n;
 			n = n / 2;
-			if (n == 1)
-			{
-				printf("%lu\n", factor);
-				break;
-			}
 		}
 	}
+	printf("%lu\n", n);
 	return (0);
 }
