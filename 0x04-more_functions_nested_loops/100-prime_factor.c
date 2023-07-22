@@ -13,7 +13,7 @@ int main(void)
 	{
 		while ((n % i == 0) && (n != 1))
 		{
-			n = n / 2;
+			n = n / i;
 		}
 	}
 	printf("%lu\n", n);
