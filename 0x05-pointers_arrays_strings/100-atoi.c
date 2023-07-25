@@ -21,7 +21,7 @@ int _atoi(char *s)
 			r = r * -1;
 		}
 
-		if (*(s + counter) >= '0' && *(s + counter) <= '9')
+		if ((*(s + counter) >= '0') && (*(s + counter) <= '9'))
 		{
 			if (size > 0)
 			{
