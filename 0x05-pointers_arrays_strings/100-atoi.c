@@ -2,41 +2,40 @@
 
 int _atoi(char *s)
 {
-	unsigned int counter = 0;
-	unsigned int size = 0;
-	unsigned int n = 0;
-	unsigned int r = 1;
-	unsigned int m = 1;
-	unsigned int i;
+	int i, j, n, lenght, f, digit;
 
-	while (*(s + counter) != '\0')
+	i = 0;
+	j = 0;
+	n = 0;
+	length = 0;
+	f = 0;
+	digit = 0;
+
+	while (s[length] != '\0')
+		length++;
+
+	while (i < length && f == 0)
 	{
-		if (size > 0 && (*(s + counter) < '0' || *(s + counter) > '9'))
-		{
-			break;
-		}
+		if (s[i] == '-')
+			++j;
 
-		if (*(s + counter) == '-')
+		if (s[i] >= '0' && s[i] <= '9')
 		{
-			r = r * -1;
+			digit = s[i] - '0';
+			if (j % 2)
+				digit = -digit;
+			n = n * 10 + digit;
+			f = 1;
+			if (s[i + 1] < '0' || s[i + 1] > '9')
+				break;
+			f = 0;
 		}
-
-		if ((*(s + counter) >= '0') && (*(s + counter) <= '9'))
-		{
-			if (size > 0)
-			{
-				m = m * 10;
-			}
-			size++;
-		}
-		counter++;
+		i++;
 	}
 
-	for (i = counter - size; i < counter; i++)
-	{
-		n = n + (*(s + counter) - 48) * m;
-		m = m / 10;
-	}
+	if (f == 0)
+		return (0);
 
-	return (n * r);
+	return (n);
 }
+
