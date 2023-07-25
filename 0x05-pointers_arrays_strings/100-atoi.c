@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * _atoi - Convert a string to an integer.
+ * @s: The string of characters
+ * Return: The convrted int
+ */
+
 int _atoi(char *s)
 {
 	int i, j, n, length, f, digit;
