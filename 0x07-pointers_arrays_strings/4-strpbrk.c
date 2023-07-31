@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strbrk - Searches a string for any of a set of bytes.
+ * _strpbrk - Searches a string for any of a set of bytes.
  * @s: The string.
  * @accept: The string of chars.
  * Return: The string s or 0.
@@ -9,18 +9,17 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-	int i;
+	int i, j;
 
-	while (*s)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (i = 0; accept[i]; i++)
+		for (j = 0; accept[j] != '\0'; j++)
 		{
-			if (*s == accept[i])
+			if (s[i] == accept[j])
 			{
 				return (s);
 			}
 		}
-		s++;
 	}
 
 	return ('\0');
