@@ -43,7 +43,7 @@ int length(char *s)
 
 int pal(char *s, int i, int length)
 {
-	if (*(s + i) != *(s + length - 1))
+	if (s[i] != s[length - 1])
 	{
 		return (0);
 	}
