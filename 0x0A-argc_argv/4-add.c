@@ -34,11 +34,10 @@ int check_num(char *str)
 
 int main(int argc, char *argv[])
 {
-	int counter;
+	int counter = 1;
 	int n;
 	int sum = 0;
 
-	counter = 1;
 	while (counter < argc)
 	{
 		if (check_num(argv[counter]))
