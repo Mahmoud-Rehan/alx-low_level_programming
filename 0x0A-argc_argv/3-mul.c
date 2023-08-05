@@ -68,7 +68,6 @@ int main(int argc, char *argv[])
 	int sum = n1 * n2;
 
 	printf("%d\n", sum);
+	
 	return (0);
-
-
 }
