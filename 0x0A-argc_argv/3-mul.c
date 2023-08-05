@@ -57,15 +57,17 @@ int _atoi(char *s)
 
 int main(int argc, char *argv[])
 {
+	int n1, n2, sum;
+
 	if (argc != 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
 
-	int n1 = _atoi(argv[1]);
-	int n2 = _atoi(argv[2]);
-	int sum = n1 * n2;
+	n1 = _atoi(argv[1]);
+	n2 = _atoi(argv[2]);
+	sum = n1 * n2;
 
 	printf("%d\n", sum);
 	
