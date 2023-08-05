@@ -5,15 +5,17 @@
 #include <string.h>
 
 /**
- * check_num - check if there are digit.
- * @str: array.
- * Return: 0 or 1.
+ * check_num - check - string there are digit
+ * @str: array str
+ *
+ * Return: Always 0 (Success)
  */
 
 int check_num(char *str)
 {
-	int count = 0;
+	unsigned int count;
 
+	count = 0;
 	while (count < strlen(str))
 	{
 		if (!isdigit(str[count]))
@@ -26,32 +28,34 @@ int check_num(char *str)
 }
 
 /**
- * main - adds positive numbers..
- * @argc: Count arguments.
- * @argv: Arguments.
- * Return: 0 Always.
+ * main - Print the name of the program
+ * @argc: Count arguments
+ * @argv: Arguments
+ * Return: Always 0 (Success)
  */
 
 int main(int argc, char *argv[])
 {
-	int counter = 1;
-	int n;
+	int count;
+	int str_to_int;
 	int sum = 0;
 
-	while (counter < argc)
+	count = 1;
+	while (count < argc)
 	{
-		if (check_num(argv[counter]))
+		if (check_num(argv[count]))
 		{
-			n = atoi(argv[counter]);
-			sum = sum + n;
+			n = atoi(argv[count]);
+			sum += n;
 		}
 		else
 		{
 			printf("Error\n");
 			return (1);
 		}
-		counter++;
+		count++;
 	}
 	printf("%d\n", sum);
 	return (0);
 }
+
