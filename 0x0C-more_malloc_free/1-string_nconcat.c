@@ -4,7 +4,8 @@
 /**
  * string_nconcat - Concatenates two strings.
  * @s1: The first string.
- * @s2; The second string.
+ * @s2: The second string.
+ * @n: The number of chars.
  * Return: The concatenated string.
  */
 
@@ -17,12 +18,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		l1++;
 	}
-
 	while (s2[l2] != '\0')
 	{
 		l2++;
 	}
-
 	if (n < l2)
 	{
 		ptr = malloc(sizeof(char) * (l1 + n + 1));
@@ -42,17 +41,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		ptr[i] = s1[i];
 		i++;
 	}
-
-	while (n >= l2 && i < (l1 + n))
+	while (n >= l2 && i < (l1 + l2))
 	{
 		ptr[i] = s2[j];
 	}
-
-	while (n < l2 && i < (l1 + l2))
+	while (n < l2 && i < (l1 + n))
 	{
 		ptr[i] = s2[j];
 	}
-
 	ptr[i] = '\0';
 	return (ptr);
 }
