@@ -5,7 +5,7 @@
  * @d: structure of type dog.
  * @name: The dog name.
  * @age: The dog age.
- * @owner: The owner.
+ * @owner: The dog owner.
  */
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
