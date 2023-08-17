@@ -22,8 +22,8 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	}
 
 	n1 = atoi(argv[1]);
-	n2 = atoi(argv[3]);
 	s = argv[2];
+	n2 = atoi(argv[3]);
 
 	if (get_op_func(s) == NULL || s[1] != '\0')
 	{
@@ -38,6 +38,6 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	}
 
 	printf("%d\n", get_op_func(s)(n1, n2));
-	
+
 	return (0);
 }
