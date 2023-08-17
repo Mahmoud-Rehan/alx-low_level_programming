@@ -38,5 +38,6 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	}
 
 	printf("%d\n", get_op_func(s)(n1, n2));
+	
 	return (0);
 }
