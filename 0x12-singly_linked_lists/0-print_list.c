@@ -2,8 +2,8 @@
 #include "lists.h"
 
 /**
- * print_list - Prints  list_t.
- * @h: Pointer to the list.
+ * print_list - Prints The elements of list_t.
+ * @h: Pointer to list_t.
  * Return: Number of elements.
  */
 
