@@ -2,14 +2,14 @@
 #include "lists.h"
 
 /**
- * print_list - Prints the elements of list_t.
+ * print_list - Prints  list_t.
  * @h: Pointer to the list.
  * Return: Number of elements.
  */
 
 size_t print_list(const list_t *h)
 {
-	size_t counter = 0;
+	size_t count = 0;
 
 	while (h != NULL)
 	{
@@ -19,7 +19,7 @@ size_t print_list(const list_t *h)
 			printf("[%u] %s\n", h->len, h->str);
 
 		h = h->next;
-		counter++;
+		count++;
 	}
-	return (counter);
+	return (count);
 }
