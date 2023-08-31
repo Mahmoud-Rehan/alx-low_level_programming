@@ -7,7 +7,7 @@
 
 void print_binary(unsigned long int n)
 {
-	int i = 60;
+	int i = 63;
 	int j = 0;
 	unsigned int b;
 
