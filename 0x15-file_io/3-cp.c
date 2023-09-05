@@ -14,7 +14,7 @@ void check_args(int args);
 
 int main(int argc, char *argv[])
 {
-	int file_from, file_to, r;
+	int file_from, file_to, r, w;
 	char *buffer;
 
 	if (argc != 3)
@@ -24,7 +24,6 @@ int main(int argc, char *argv[])
 	}
 
 	buffer = allocate(argv[2]);
-
 	file_from = open(argv[1], O_RDONLY);
 	r = read(file_from, buffer, 1024);
 	file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
@@ -36,15 +35,19 @@ int main(int argc, char *argv[])
 			free(buffer);
 			exit(98);
 		}
-		write(file_to, buffer, r);
-		if (file_to == -1)
+
+		w = write(file_to, buffer, r);
+
+		if (file_to == -1 || w == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			free(buffer);
 			exit(99);
 		}
+
 		r = read(file_from, buffer, 1024);
 		file_to = open(argv[2], O_WRONLY | O_APPEND);
+
 	} while (r > 0);
 
 	free(buffer);
