@@ -17,7 +17,12 @@ int main(int argc, char *argv[])
 	int file_from, file_to, r;
 	char *buffer;
 
-	check_args(argc);
+	if (args != 3)
+	{
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
+		exit(97);
+	}
+
 	buffer = allocate(argv[2]);
 
 	file_from = open(argv[1], O_RDONLY);
@@ -47,20 +52,6 @@ int main(int argc, char *argv[])
 	close_file(file_to);
 
 	return (0);
-}
-
-/**
- * check_args - check arguments.
- * @args: arguments.
- */
-
-void check_args(int args)
-{
-	if (args != 3)
-	{
-		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
-		exit(97);
-	}
 }
 
 /**
