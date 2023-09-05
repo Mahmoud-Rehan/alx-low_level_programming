@@ -18,7 +18,6 @@ int main(int argc, char *argv[])
 	char *buffer;
 
 	check_args(argc);
-
 	buffer = allocate(argv[2]);
 
 	file_from = open(argv[1], O_RDONLY);
