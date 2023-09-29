@@ -9,10 +9,10 @@
 
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unsigned int num1;
-	unsigned int num2;
 	int i;
 	int j = 0;
+	unsigned long int num1;
+	unsigned long int num2;
 
 	num2 = n ^ m;
 
@@ -27,4 +27,5 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	}
 
 	return (j);
+
 }
