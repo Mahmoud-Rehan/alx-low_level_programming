@@ -3,7 +3,7 @@
 #include "lists.h"
 
 
-/*
+/**
  * dlistint_len - Count the number of elements.
  * @h: The doubly linked list.
  * Return: The number of elements.
