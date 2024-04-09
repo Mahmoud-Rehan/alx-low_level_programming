@@ -13,23 +13,26 @@ def island_perimeter(grid):
             
             if sublist[n] == 1:
                 
-                if n > 0:
-                    
-                    if sublist[n - 1] == 0:
-                        perimeter += 1
-                
-                if n < len(sublist) - 1:
-                    
-                    if sublist[n + 1] == 0:
-                        perimeter += 1
+                if sublist[n - 1] == 0:
+                    perimeter += 1
+
+                if sublist[n + 1] == 0:
+                    perimeter += 1
+
+                if n == 0 or n == len(sublist) - 1:
+                    perimeter += 1
 
                 downlist = grid[i + 1]
-                uplist = grid[i - 1]
 
                 if downlist[n] == 0:
                     perimeter += 1
-                
+
+                uplist = grid[i - 1]
+
                 if uplist[n] == 0:
+                    perimeter += 1
+
+                if i == 0 or i == len(grid) - 1:
                     perimeter += 1
     
     return (perimeter)
