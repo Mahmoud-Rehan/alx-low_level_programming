@@ -6,9 +6,10 @@ def island_perimeter(grid):
     """ island_perimeter function module """
     perimeter = 0
 
-    for i, sublist in enumerate(grid):
-        for n, index in enumerate(sublist):
-            if index == 1:
+    for i  in range(len(grid)):
+        sublist = grid[i]
+        for n in range (len(sublist)):
+            if sublist[n] == 1:
                 if i == 0 or grid[i - 1][n] == 0:
                     perimeter += 1
                 if i == len(grid) - 1 or grid[i + 1][n] == 0:
