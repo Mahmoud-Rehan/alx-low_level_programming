@@ -1,6 +1,9 @@
 #!/usr/bin/python3
+""" Get the Number of perimeter Function Module """
+
 
 def island_perimeter(grid):
+    """ island_perimeter function module """
     perimeter = 0
 
     for i in range(0, len(grid) - 1):
